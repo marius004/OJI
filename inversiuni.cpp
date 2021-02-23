@@ -41,7 +41,7 @@ int main() {
     /// elementul maxim intr o permutare este N
     /// deci iteram peste permutare
     /// si vedem cate elemente sunt mai mici sau egale cu permutation[index] - 1
-    /// dupa updatam BIT, mai specific pe pozitia permutation[index] din BIT adaugam valoarea 1
+    /// dupa updatam BIT, mai specific update(permutation[index], 1)
 
     int inversions{};
     for(int i = 1;i <= n;++i) {

@@ -44,7 +44,7 @@ int main() {
     /// dupa updatam BIT, mai specific update(permutation[index], 1)
 
     int inversions{};
-    for(int i = 1;i <= n;++i) {
+    for(int i = n;i >= 1;--i) {
         inversions += accumulate(permutation[i] - 1);
         update(permutation[i], 1);
     }
